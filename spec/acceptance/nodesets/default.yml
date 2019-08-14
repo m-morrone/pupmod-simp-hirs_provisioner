@@ -18,16 +18,8 @@ HOSTS:
       epel:
         mirrorlist: 'https://mirrors.fedoraproject.org/metalink?repo=epel-7&arch=$basearch'
         gpgkeys:
-          - https://getfedora.org/static/352C64E5.txt
-      simpdeps:
-        baseurl: https://packagecloud.io/simp-project/6_X_Dependencies/el/$releasever/$basearch
-        gpgkeys:
-          - https://raw.githubusercontent.com/NationalSecurityAgency/SIMP/master/GPGKEYS/RPM-GPG-KEY-SIMP
-          - https://download.simp-project.com/simp/GPGKEYS/RPM-GPG-KEY-SIMP-6
-          - https://yum.puppet.com/RPM-GPG-KEY-puppetlabs
-          - https://yum.puppet.com/RPM-GPG-KEY-puppet
-          - https://apt.postgresql.org/pub/repos/yum/RPM-GPG-KEY-PGDG-96
           - https://dl.fedoraproject.org/pub/epel/RPM-GPG-KEY-EPEL-$releasever
+
   el7-tpm-2-0:
     roles:
       - hirs
@@ -39,16 +31,8 @@ HOSTS:
       epel:
         mirrorlist: 'https://mirrors.fedoraproject.org/metalink?repo=epel-7&arch=$basearch'
         gpgkeys:
-          - https://getfedora.org/static/352C64E5.txt
-      simpdeps:
-        baseurl: https://packagecloud.io/simp-project/6_X_Dependencies/el/$releasever/$basearch
-        gpgkeys:
-          - https://raw.githubusercontent.com/NationalSecurityAgency/SIMP/master/GPGKEYS/RPM-GPG-KEY-SIMP
-          - https://download.simp-project.com/simp/GPGKEYS/RPM-GPG-KEY-SIMP-6
-          - https://yum.puppet.com/RPM-GPG-KEY-puppetlabs
-          - https://yum.puppet.com/RPM-GPG-KEY-puppet
-          - https://apt.postgresql.org/pub/repos/yum/RPM-GPG-KEY-PGDG-96
           - https://dl.fedoraproject.org/pub/epel/RPM-GPG-KEY-EPEL-$releasever
+
   el6-tpm-1-2:
     roles:
       - hirs
@@ -58,18 +42,10 @@ HOSTS:
     hypervisor: <%= hypervisor %>
     yum_repos:
       epel:
-        mirrorlist: 'https://mirrors.fedoraproject.org/metalink?repo=epel-6&arch=$basearch'
+        mirrorlist: 'https://mirrors.fedoraproject.org/metalink?repo=epel-7&arch=$basearch'
         gpgkeys:
-          - https://getfedora.org/static/0608B895.txt
-      simpdeps:
-        baseurl: https://packagecloud.io/simp-project/6_X_Dependencies/el/$releasever/$basearch
-        gpgkeys:
-          - https://raw.githubusercontent.com/NationalSecurityAgency/SIMP/master/GPGKEYS/RPM-GPG-KEY-SIMP
-          - https://download.simp-project.com/simp/GPGKEYS/RPM-GPG-KEY-SIMP-6
-          - https://yum.puppet.com/RPM-GPG-KEY-puppetlabs
-          - https://yum.puppet.com/RPM-GPG-KEY-puppet
-          - https://apt.postgresql.org/pub/repos/yum/RPM-GPG-KEY-PGDG-96
           - https://dl.fedoraproject.org/pub/epel/RPM-GPG-KEY-EPEL-$releasever
+
   aca:
     roles:
       - aca
@@ -80,15 +56,6 @@ HOSTS:
       epel:
         mirrorlist: 'https://mirrors.fedoraproject.org/metalink?repo=epel-7&arch=$basearch'
         gpgkeys:
-          - https://getfedora.org/static/352C64E5.txt
-      simpdeps:
-        baseurl: https://packagecloud.io/simp-project/6_X_Dependencies/el/$releasever/$basearch
-        gpgkeys:
-          - https://raw.githubusercontent.com/NationalSecurityAgency/SIMP/master/GPGKEYS/RPM-GPG-KEY-SIMP
-          - https://download.simp-project.com/simp/GPGKEYS/RPM-GPG-KEY-SIMP-6
-          - https://yum.puppet.com/RPM-GPG-KEY-puppetlabs
-          - https://yum.puppet.com/RPM-GPG-KEY-puppet
-          - https://apt.postgresql.org/pub/repos/yum/RPM-GPG-KEY-PGDG-96
           - https://dl.fedoraproject.org/pub/epel/RPM-GPG-KEY-EPEL-$releasever
 
 CONFIG:

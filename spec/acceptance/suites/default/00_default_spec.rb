@@ -10,6 +10,13 @@ describe 'hirs_provisioner class with no tpm' do
     EOS
   }
 
+  hosts.each do |host|
+    it 'should enable SIMP dependencies repo' do
+      # exclude SIMP repo, as we only want the SIMP deps repo
+      install_simp_repos(host, ['simp'])
+    end
+  end
+
   hosts_with_role(hosts, 'hirs').each do |hirs_host|
     # This tests that nothing bad happens when the module is applied with no TPM
     context 'default parameters' do
